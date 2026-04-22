@@ -2,12 +2,14 @@ from flask import Flask, jsonify
 from dotenv import load_dotenv
 import os
 import psycopg
+from backend.routes.verify import verify_bp
 
 load_dotenv()
 DATABASE_URL = os.getenv("DATABASE_URL")
 print("DB URL Loaded:", DATABASE_URL is not None)
 
 app = Flask(__name__)
+app.register_blueprint(verify_bp)
 
 @app.route("/")
 def home():
