@@ -7,26 +7,41 @@ face_app.prepare(ctx_id=0)
 def detect_faces(image):
     try:
         faces = face_app.get(image)
-        return faces
+
+        if len(faces) == 0:
+            return "NO_FACE", []
+
+        if len(faces) > 1:
+            return "MULTIPLE_FACES", faces
+
+        return "OK", faces
+
     except Exception as e:
         print("Face detection error:", str(e))
-        return []
+        return "ERROR", []
     
 
 def get_face_embedding(image):
     try:
-        faces = detect_faces(image)
+        status, faces = detect_faces(image)
 
-        if len(faces) == 0:
-            return None
+        if status == "NO_FACE":
+            return "NO_FACE", None
 
-        # Take first detected face
+        if status == "MULTIPLE_FACES":
+            return "MULTIPLE_FACES", None
+
+        if status != "OK":
+            return "ERROR", None
+
+        # Exactly one face
         face = faces[0]
-
         embedding = face.embedding
-        return embedding
+
+        return "OK", embedding
+
     except Exception as e:
         print("Embedding error:", str(e))
-        return None
+        return "ERROR", None
     
 
