@@ -1,2 +1,88 @@
 2026-04-22T23:08:19.493634 | Decision: {'status': 'ACCEPT', 'confidence': 1.0, 'reason': 'FACE_MATCH_HIGH'}
 2026-04-23T12:02:43.643683 | Decision: {'status': 'ACCEPT', 'confidence': 1.0, 'reason': 'FACE_MATCH_HIGH'}
+2026-04-23T12:40:22.050716 | DB Write: True, INSERT_SUCCESS, request_id=e722d899-686f-4560-a773-7f51e28545d3
+2026-04-23T12:40:22.052571 | Decision: {'status': 'ACCEPT', 'confidence': 1.0, 'reason': 'FACE_MATCH_HIGH'}, request_id=e722d899-686f-4560-a773-7f51e28545d3
+2026-04-23T12:42:33.120998 | DB Write: True, INSERT_SUCCESS, request_id=c80a9719-7d48-4e43-bdc5-686c57e06e95
+2026-04-23T12:42:33.121157 | Decision: {'status': 'ACCEPT', 'confidence': 1.0, 'reason': 'FACE_MATCH_HIGH'}, request_id=c80a9719-7d48-4e43-bdc5-686c57e06e95
+2026-04-23T12:54:36.697399 | DB Retry Attempt 0 failed: DB_CONNECTION_FAILED | request_id=2787a09f-d137-4b53-93d7-2eef956d8707
+2026-04-23T12:54:50.101441 | DB Retry Attempt 1 failed: DB_CONNECTION_FAILED | request_id=2787a09f-d137-4b53-93d7-2eef956d8707
+2026-04-23T12:55:01.979625 | DB Retry Attempt 2 failed: DB_CONNECTION_FAILED | request_id=2787a09f-d137-4b53-93d7-2eef956d8707
+2026-04-23T12:55:01.979813 | DB Write Failed after retries | request_id=2787a09f-d137-4b53-93d7-2eef956d8707 | error=DB_CONNECTION_FAILED
+2026-04-23T12:55:01.980602 | Event added to local queue | request_id=2787a09f-d137-4b53-93d7-2eef956d8707
+2026-04-23T12:55:01.980687 | DB Write: False, FAILED_AFTER_RETRIES: DB_CONNECTION_FAILED, request_id=2787a09f-d137-4b53-93d7-2eef956d8707
+2026-04-23T12:55:01.980747 | Decision: {'status': 'ACCEPT', 'confidence': 1.0, 'reason': 'FACE_MATCH_HIGH'}, request_id=2787a09f-d137-4b53-93d7-2eef956d8707
+2026-04-23T13:08:57.074829 | DB Retry Attempt 0 failed: DB_CONNECTION_FAILED | request_id=2787a09f-d137-4b53-93d7-2eef956d8707
+2026-04-23T13:09:08.134773 | DB Retry Attempt 1 failed: DB_CONNECTION_FAILED | request_id=2787a09f-d137-4b53-93d7-2eef956d8707
+2026-04-23T13:09:19.399476 | DB Retry Attempt 2 failed: DB_CONNECTION_FAILED | request_id=2787a09f-d137-4b53-93d7-2eef956d8707
+2026-04-23T13:09:19.399610 | DB Write Failed after retries | request_id=2787a09f-d137-4b53-93d7-2eef956d8707 | error=DB_CONNECTION_FAILED
+2026-04-23T13:09:32.312048 | DB Retry Attempt 0 failed: DB_CONNECTION_FAILED | request_id=9436266e-fef0-4c0f-ace8-af6035fad64b
+2026-04-23T13:09:44.179930 | DB Retry Attempt 1 failed: DB_CONNECTION_FAILED | request_id=9436266e-fef0-4c0f-ace8-af6035fad64b
+2026-04-23T13:09:55.450464 | DB Retry Attempt 2 failed: DB_CONNECTION_FAILED | request_id=9436266e-fef0-4c0f-ace8-af6035fad64b
+2026-04-23T13:09:55.450583 | DB Write Failed after retries | request_id=9436266e-fef0-4c0f-ace8-af6035fad64b | error=DB_CONNECTION_FAILED
+2026-04-23T13:09:55.451139 | Event added to local queue | request_id=9436266e-fef0-4c0f-ace8-af6035fad64b
+2026-04-23T13:09:55.451363 | DB Write: False, FAILED_AFTER_RETRIES: DB_CONNECTION_FAILED, request_id=9436266e-fef0-4c0f-ace8-af6035fad64b
+2026-04-23T13:09:55.451431 | Decision: {'status': 'ACCEPT', 'confidence': 1.0, 'reason': 'FACE_MATCH_HIGH'}, request_id=9436266e-fef0-4c0f-ace8-af6035fad64b
+2026-04-23T13:14:54.459135 | DB Write Success on attempt 0 | request_id=2787a09f-d137-4b53-93d7-2eef956d8707
+2026-04-23T13:14:54.459508 | Queued event processed | request_id=2787a09f-d137-4b53-93d7-2eef956d8707
+2026-04-23T13:14:57.428520 | DB Write Success on attempt 0 | request_id=9436266e-fef0-4c0f-ace8-af6035fad64b
+2026-04-23T13:14:57.428695 | Queued event processed | request_id=9436266e-fef0-4c0f-ace8-af6035fad64b
+2026-04-23T13:15:01.933796 | DB Write Success on attempt 0 | request_id=9ff552a3-147e-4322-a109-315f64de4c28
+2026-04-23T13:15:01.934040 | DB Write: True, INSERT_SUCCESS (attempt 0), request_id=9ff552a3-147e-4322-a109-315f64de4c28
+2026-04-23T13:15:01.934173 | Decision: {'status': 'ACCEPT', 'confidence': 1.0, 'reason': 'FACE_MATCH_HIGH'}, request_id=9ff552a3-147e-4322-a109-315f64de4c28
+2026-04-23T16:51:57.054146 | DB Write Success on attempt 0 | request_id=adcd4a9a-7a2d-4a57-9ec4-359ef187e399
+2026-04-23T16:51:57.054680 | DB Write: True, INSERT_SUCCESS (attempt 0), request_id=adcd4a9a-7a2d-4a57-9ec4-359ef187e399
+2026-04-23T16:51:57.056028 | Decision: {'status': 'ACCEPT', 'confidence': 1.0, 'reason': 'FACE_MATCH_HIGH'}, request_id=adcd4a9a-7a2d-4a57-9ec4-359ef187e399
+2026-04-23T16:55:07.877930 | DB Write Success on attempt 0 | request_id=75c1d473-e711-4ece-a932-0a5fc518a381
+2026-04-23T16:55:07.878173 | DB Write: True, INSERT_SUCCESS (attempt 0), request_id=75c1d473-e711-4ece-a932-0a5fc518a381
+2026-04-23T16:55:07.879571 | Decision: {'status': 'ACCEPT', 'confidence': 1.0, 'reason': 'FACE_MATCH_HIGH'}, request_id=75c1d473-e711-4ece-a932-0a5fc518a381
+2026-04-23T17:06:28.259178 | Skipped DB Write: {'status': 'REJECT', 'confidence': -0.021984316408634186, 'reason': 'FACE_MISMATCH'}, request_id=e7f2eff0-66ac-4549-b883-4c0f636349f8
+2026-04-23T17:06:28.259781 | Decision: {'status': 'REJECT', 'confidence': -0.021984316408634186, 'reason': 'FACE_MISMATCH'}, request_id=e7f2eff0-66ac-4549-b883-4c0f636349f8
+2026-04-23T17:06:38.124181 | DB Write Success on attempt 0 | request_id=7bc5e77b-5c38-44a2-a4e2-b52a57f062c1
+2026-04-23T17:06:38.124380 | DB Write: True, INSERT_SUCCESS (attempt 0), request_id=7bc5e77b-5c38-44a2-a4e2-b52a57f062c1
+2026-04-23T17:06:38.125201 | Decision: {'status': 'ACCEPT', 'confidence': 0.5582778453826904, 'reason': 'FACE_MATCH_HIGH'}, request_id=7bc5e77b-5c38-44a2-a4e2-b52a57f062c1
+2026-04-23T17:16:45.412619 | Skipped DB Write: {'status': 'REJECT', 'confidence': -0.021984316408634186, 'reason': 'FACE_MISMATCH'}, request_id=3650d26c-77d2-463e-9e7d-e313395a4c56
+2026-04-23T17:16:45.413403 | Decision: {'status': 'REJECT', 'confidence': -0.021984316408634186, 'reason': 'FACE_MISMATCH'}, request_id=3650d26c-77d2-463e-9e7d-e313395a4c56
+2026-04-23T17:16:50.466731 | DB Write Success on attempt 0 | request_id=00220a2a-9439-4931-8898-0fc87c943cd2
+2026-04-23T17:16:50.466985 | DB Write: True, INSERT_SUCCESS (attempt 0), request_id=00220a2a-9439-4931-8898-0fc87c943cd2
+2026-04-23T17:16:50.468083 | Decision: {'status': 'ACCEPT', 'confidence': 0.5582778453826904, 'reason': 'FACE_MATCH_HIGH'}, request_id=00220a2a-9439-4931-8898-0fc87c943cd2
+2026-04-23T17:17:35.453446 | Skipped DB Write: {'status': 'REJECT', 'confidence': -0.021984316408634186, 'reason': 'FACE_MISMATCH'}, request_id=c0fc3958-e17e-4010-817e-fa7a387febd8
+2026-04-23T17:17:35.454036 | Decision: {'status': 'REJECT', 'confidence': -0.021984316408634186, 'reason': 'FACE_MISMATCH'}, request_id=c0fc3958-e17e-4010-817e-fa7a387febd8
+2026-04-23T17:17:39.618417 | DB Write Success on attempt 0 | request_id=995a342b-5168-4915-b0c5-34efa5179751
+2026-04-23T17:17:39.618686 | DB Write: True, INSERT_SUCCESS (attempt 0), request_id=995a342b-5168-4915-b0c5-34efa5179751
+2026-04-23T17:17:39.619404 | Decision: {'status': 'ACCEPT', 'confidence': 0.5582778453826904, 'reason': 'FACE_MATCH_HIGH'}, request_id=995a342b-5168-4915-b0c5-34efa5179751
+2026-04-23T17:24:09.467255 | DB Write Success on attempt 0 | request_id=f707bb10-9ee1-452b-a6cb-291de1a170af
+2026-04-23T17:24:09.467515 | DB Write: True, INSERT_SUCCESS (attempt 0), request_id=f707bb10-9ee1-452b-a6cb-291de1a170af
+2026-04-23T17:24:09.468402 | Decision: {'status': 'ACCEPT', 'confidence': 0.6042836308479309, 'reason': 'FACE_MATCH_HIGH'}, request_id=f707bb10-9ee1-452b-a6cb-291de1a170af
+2026-04-23T17:24:10.547879 | Skipped DB Write: {'status': 'REJECT', 'confidence': -0.021984316408634186, 'reason': 'FACE_MISMATCH'}, request_id=20638dac-eaf5-49fc-929a-1957f3ed800b
+2026-04-23T17:24:10.548451 | Decision: {'status': 'REJECT', 'confidence': -0.021984316408634186, 'reason': 'FACE_MISMATCH'}, request_id=20638dac-eaf5-49fc-929a-1957f3ed800b
+2026-04-23T17:24:14.269709 | DB Write Success on attempt 0 | request_id=2ff8ae9b-7f00-4171-9427-2cd3ce9a9216
+2026-04-23T17:24:14.269977 | DB Write: True, INSERT_SUCCESS (attempt 0), request_id=2ff8ae9b-7f00-4171-9427-2cd3ce9a9216
+2026-04-23T17:24:14.277301 | Decision: {'status': 'ACCEPT', 'confidence': 0.5582778453826904, 'reason': 'FACE_MATCH_HIGH'}, request_id=2ff8ae9b-7f00-4171-9427-2cd3ce9a9216
+2026-04-23T17:25:41.617902 | DB Write Success on attempt 0 | request_id=dbe76265-2fd2-4291-980b-3ef3d721b39e
+2026-04-23T17:25:41.618090 | DB Write: True, INSERT_SUCCESS (attempt 0), request_id=dbe76265-2fd2-4291-980b-3ef3d721b39e
+2026-04-23T17:25:41.618855 | Decision: {'status': 'ACCEPT', 'confidence': 0.6042836308479309, 'reason': 'FACE_MATCH_HIGH'}, request_id=dbe76265-2fd2-4291-980b-3ef3d721b39e
+2026-04-23T17:25:42.721294 | Skipped DB Write: {'status': 'REJECT', 'confidence': -0.021984316408634186, 'reason': 'FACE_MISMATCH'}, request_id=df17c687-c337-4f3b-86c0-4375a55d247f
+2026-04-23T17:25:42.721829 | Decision: {'status': 'REJECT', 'confidence': -0.021984316408634186, 'reason': 'FACE_MISMATCH'}, request_id=df17c687-c337-4f3b-86c0-4375a55d247f
+2026-04-23T17:25:43.893019 | Skipped DB Write: {'status': 'REJECT', 'confidence': 0.5582778453826904, 'reason': 'FACE_MISMATCH'}, request_id=26491eaa-dcdf-4eee-a1a6-499b896db514
+2026-04-23T17:25:43.893604 | Decision: {'status': 'REJECT', 'confidence': 0.5582778453826904, 'reason': 'FACE_MISMATCH'}, request_id=26491eaa-dcdf-4eee-a1a6-499b896db514
+2026-04-23T17:30:14.101297 | DB Write Success on attempt 0 | request_id=2873ebb6-1bb1-4bd0-881c-3544641499c2
+2026-04-23T17:30:14.101469 | DB Write: True, INSERT_SUCCESS (attempt 0), request_id=2873ebb6-1bb1-4bd0-881c-3544641499c2
+2026-04-23T17:30:14.102381 | Decision: {'status': 'ACCEPT', 'confidence': 0.6042836308479309, 'reason': 'FACE_MATCH_HIGH'}, request_id=2873ebb6-1bb1-4bd0-881c-3544641499c2
+2026-04-23T17:30:15.359537 | Skipped DB Write: {'status': 'REJECT', 'confidence': -0.021984316408634186, 'reason': 'FACE_MISMATCH'}, request_id=8a4594b5-ac27-47c0-8148-f6567b2e3c6a
+2026-04-23T17:30:15.360147 | Decision: {'status': 'REJECT', 'confidence': -0.021984316408634186, 'reason': 'FACE_MISMATCH'}, request_id=8a4594b5-ac27-47c0-8148-f6567b2e3c6a
+2026-04-23T17:30:16.441079 | Skipped DB Write: {'status': 'PENDING', 'confidence': 0.5582778453826904, 'reason': 'LOW_CONFIDENCE'}, request_id=6833ffc5-a088-48d8-93d9-4243d9f25bf7
+2026-04-23T17:30:16.441825 | Decision: {'status': 'PENDING', 'confidence': 0.5582778453826904, 'reason': 'LOW_CONFIDENCE'}, request_id=6833ffc5-a088-48d8-93d9-4243d9f25bf7
+2026-04-24T15:47:15.455525 | DB Write Success on attempt 0 | request_id=a3fba017-4d41-4b39-b91a-bf81e47f25c0
+2026-04-24T15:47:15.459304 | {'status': 'ACCEPT', 'confidence': 0.9489095211029053, 'reason': 'FACE_MATCH_HIGH'} | student_id=29ca6fc7-60e6-471b-bf16-8c9ee2bfb971 | request_id=a3fba017-4d41-4b39-b91a-bf81e47f25c0
+2026-04-24T15:47:53.312403 | {'status': 'REJECT', 'confidence': 0.05235648900270462, 'reason': 'FACE_MISMATCH'} | student_id=29ca6fc7-60e6-471b-bf16-8c9ee2bfb971 | request_id=4428fa0b-e58b-4314-adc0-a99d372b19a0
+2026-04-24T16:03:29.767668 | DB Write Success on attempt 0 | request_id=5f6b48f9-d8f2-4e9f-a383-074f0588fbd8
+2026-04-24T16:03:29.768477 | {'status': 'ACCEPT', 'confidence': 0.8518013954162598} | student_id=29ca6fc7-60e6-471b-bf16-8c9ee2bfb971 | request_id=5f6b48f9-d8f2-4e9f-a383-074f0588fbd8
+2026-04-24T16:05:46.717532 | {'status': 'REJECT', 'confidence': 0.05188775062561035} | student_id=29ca6fc7-60e6-471b-bf16-8c9ee2bfb971 | request_id=1bff2781-354b-4328-85f6-a7092bb94b58
+2026-04-24T16:13:09.474043 | DB Write Success on attempt 0 | request_id=ff999c7c-e813-4394-acec-9daccb1c559a
+2026-04-24T16:13:09.474941 | {'status': 'ACCEPT', 'confidence': 0.8656456470489502} | student_id=29ca6fc7-60e6-471b-bf16-8c9ee2bfb971 | request_id=ff999c7c-e813-4394-acec-9daccb1c559a
+2026-04-24T16:17:11.872742 | DB Write Success on attempt 0 | request_id=26cbc939-4e14-45a5-87af-00625d1114cf
+2026-04-24T16:17:11.873650 | {'status': 'ACCEPT', 'confidence': 0.8816112279891968} | student_id=14bfdc73-5392-4196-ab94-3a171043e8cc | request_id=26cbc939-4e14-45a5-87af-00625d1114cf
+2026-04-24T16:39:25.346841 | {'status': 'PENDING', 'confidence': 0.7330849170684814} | student_id=0ebcde66-bf68-4d59-9214-1c60aaf5f498 | request_id=b5b2154c-0f25-48ef-ac86-add2b6adf7f6
+2026-04-24T16:43:44.311273 | {'status': 'REJECT', 'confidence': 0.2602967917919159} | student_id=0ebcde66-bf68-4d59-9214-1c60aaf5f498 | request_id=cb636312-a5d2-4b9d-afd6-6c5ecc3e87cd
+2026-04-24T16:44:27.847956 | DB Write Success on attempt 0 | request_id=e254bd0c-46ba-4fd4-93ab-4e646e17fcbe
+2026-04-24T16:44:27.848979 | {'status': 'ACCEPT', 'confidence': 0.8008809089660645} | student_id=0ebcde66-bf68-4d59-9214-1c60aaf5f498 | request_id=e254bd0c-46ba-4fd4-93ab-4e646e17fcbe

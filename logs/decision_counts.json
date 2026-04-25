@@ -1,0 +1,6 @@
+{
+  "ACCEPT": 13,
+  "REJECT": 15,
+  "PENDING": 2,
+  "RETRY": 5
+}

@@ -2,15 +2,23 @@ from flask import Flask, jsonify
 from dotenv import load_dotenv
 import os
 import psycopg
-from backend.routes.verify import verify_bp
+
+from backend.routes.register import register_bp
+from backend.routes.qr import qr_bp
+from backend.routes.verify import verify_user_bp  # ✅ FIXED
 
 load_dotenv()
 DATABASE_URL = os.getenv("DATABASE_URL")
 print("DB URL Loaded:", DATABASE_URL is not None)
 
 app = Flask(__name__)
-app.register_blueprint(verify_bp)
 
+# -------- REGISTER ROUTES --------
+app.register_blueprint(register_bp)
+app.register_blueprint(qr_bp)
+app.register_blueprint(verify_user_bp)
+
+# -------- BASIC ROUTES --------
 @app.route("/")
 def home():
     return jsonify({"message": "Backend is running"})
@@ -20,7 +28,6 @@ def test():
     return jsonify({"status": "API working"})
 
 @app.route("/api/db-test")
-
 def db_test():
     try:
         conn = psycopg.connect(DATABASE_URL)
@@ -29,9 +36,17 @@ def db_test():
         result = cur.fetchone()
         conn.close()
 
-        return jsonify({"db_status": "connected", "result": result[0]})
-    except Exception as e:
-        return jsonify({"db_status": "error", "error": str(e)})
+        return jsonify({
+            "db_status": "connected",
+            "result": result[0]
+        })
 
+    except Exception as e:
+        return jsonify({
+            "db_status": "error",
+            "error": str(e)
+        })
+
+# -------- RUN --------
 if __name__ == "__main__":
     app.run(debug=True, port=5000)
